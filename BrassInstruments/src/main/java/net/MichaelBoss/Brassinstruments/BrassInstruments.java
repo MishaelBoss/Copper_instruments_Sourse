@@ -1,6 +1,7 @@
 package net.MichaelBoss.Brassinstruments;
 
 import com.mojang.logging.LogUtils;
+import net.MichaelBoss.Brassinstruments.fluid.ModFluids;
 import net.MichaelBoss.Brassinstruments.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -50,7 +51,6 @@ public class BrassInstruments
             event.accept(ModItems.COPPER_HORSE_ARMOR);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
-            event.accept(ModItems.COPPER);
             event.accept(ModItems.COPPER_PICKAXE);
             event.accept(ModItems.COPPER_AXE);
             event.accept(ModItems.COPPER_SHOVE);
