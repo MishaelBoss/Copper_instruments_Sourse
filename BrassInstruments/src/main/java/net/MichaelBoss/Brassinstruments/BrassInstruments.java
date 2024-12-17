@@ -28,17 +28,11 @@ public class BrassInstruments
 
         ModItems.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-    }
-
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event){
@@ -53,18 +47,16 @@ public class BrassInstruments
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.COPPER_PICKAXE);
             event.accept(ModItems.COPPER_AXE);
-            event.accept(ModItems.COPPER_SHOVE);
+            event.accept(ModItems.COPPER_SHOVEL);
             event.accept(ModItems.COPPER_HOE);
             event.accept(ModItems.COPPER_SHEARS);
         }
     }
 
-
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModEvents{
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event){
-
         }
     }
 }
