@@ -7,7 +7,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum TutTiers implements Tier {
-    COPPER(2, 70,6, 6, 17, () -> Ingredient.of());
+    COPPER(2, 210,6, 5, 17, () -> Ingredient.of());
 
     private final int miningLevel;
     private final int durability;

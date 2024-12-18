@@ -7,8 +7,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static net.minecraft.world.item.Tiers.IRON;
-
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
@@ -24,7 +22,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
-            ()-> new SwordItem(TutTiers.COPPER, 1, 0.625f, new Item.Properties()));
+            ()-> new SwordItem(TutTiers.COPPER, 0, 0.625f, new Item.Properties()));
     public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
             ()-> new PickaxeItem(TutTiers.COPPER, 3, 1, new Item.Properties()));
     public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
