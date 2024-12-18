@@ -20,6 +20,8 @@ public class ModItems {
     public static final RegistryObject<Item> COPPER_SHEARS = ITEMS.register("copper_shears",
             ()-> new ShearsItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () ->
+            new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
             ()-> new SwordItem(TutTiers.COPPER, 0, 0.625f, new Item.Properties()));

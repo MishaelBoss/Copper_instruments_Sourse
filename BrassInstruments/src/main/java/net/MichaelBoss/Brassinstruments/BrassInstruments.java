@@ -47,5 +47,8 @@ public class BrassInstruments
             event.accept(ModItems.COPPER_HOE);
             event.accept(ModItems.COPPER_SHEARS);
         }
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.COPPER_NUGGET);
+        }
     }
 }
