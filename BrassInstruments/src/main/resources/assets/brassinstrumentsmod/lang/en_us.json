@@ -5,6 +5,24 @@
   "item.brassinstrumentsmod.copper_shovel": "Copper Shovel",
   "item.brassinstrumentsmod.copper_hoe": "Copper Hoe",
 
+  "item.brassinstrumentsmod.exposed_copper_sword": "Exposed Copper Sword",
+  "item.brassinstrumentsmod.exposed_copper_pickaxe": "Copper Pickaxe",
+  "item.brassinstrumentsmod.exposed_copper_axe": "Copper Axe",
+  "item.brassinstrumentsmod.exposed_copper_shovel": "Copper Shovel",
+  "item.brassinstrumentsmod.exposed_copper_hoe": "Copper Hoe",
+
+  "item.brassinstrumentsmod.oxidized_copper_sword": "Oxidized Copper Sword",
+  "item.brassinstrumentsmod.oxidized_copper_pickaxe": "Oxidized Copper Pickaxe",
+  "item.brassinstrumentsmod.oxidized_copper_axe": "Oxidized Copper Axe",
+  "item.brassinstrumentsmod.oxidized_copper_shovel": "Oxidized Copper Shovel",
+  "item.brassinstrumentsmod.oxidized_copper_hoe": "Oxidized Copper Hoe",
+
+  "item.brassinstrumentsmod.weathered_copper_sword": "Weathered Copper Sword",
+  "item.brassinstrumentsmod.weathered_copper_pickaxe": "Weathered Copper Pickaxe",
+  "item.brassinstrumentsmod.weathered_copper_axe": "Weathered Copper Axe",
+  "item.brassinstrumentsmod.weathered_copper_shovel": "Weathered Copper Shovel",
+  "item.brassinstrumentsmod.weathered_copper_hoe": "Weathered Copper Hoe",
+
   "item.brassinstrumentsmod.copper_shears": "Copper Hears",
 
   "item.brassinstrumentsmod.copper_helmet": "Copper Helmet",
@@ -12,6 +30,21 @@
   "item.brassinstrumentsmod.copper_leggings": "Copper Leggings",
   "item.brassinstrumentsmod.copper_boots": "Copper Boots",
   "item.brassinstrumentsmod.copper_horse_armor": "Copper Horse Armor",
+
+  "item.brassinstrumentsmod.exposed_copper_helmet": "Exposed Copper Helmet",
+  "item.brassinstrumentsmod.exposed_copper_chestplate": "Exposed Copper Chestplate",
+  "item.brassinstrumentsmod.exposed_copper_leggings": "Exposed Copper Leggings",
+  "item.brassinstrumentsmod.exposed_copper_boots": "Exposed Copper Boots",
+
+  "item.brassinstrumentsmod.oxidized_copper_helmet": "Oxidized Copper Helmet",
+  "item.brassinstrumentsmod.oxidized_copper_chestplate": "Oxidized Copper Chestplate",
+  "item.brassinstrumentsmod.oxidized_copper_leggings": "Oxidized Copper Leggings",
+  "item.brassinstrumentsmod.oxidized_copper_boots": "Oxidized Copper Boots",
+
+  "item.brassinstrumentsmod.weathered_copper_helmet": "Weathered Copper Helmet",
+  "item.brassinstrumentsmod.weathered_copper_chestplate": "Weathered Copper Chestplate",
+  "item.brassinstrumentsmod.weathered_copper_leggings": "Weathered Copper Leggings",
+  "item.brassinstrumentsmod.weathered_copper_boots": "Weathered Copper Boots",
 
   "item.brassinstrumentsmod.copper_nugget": "Copper Nugget"
 }

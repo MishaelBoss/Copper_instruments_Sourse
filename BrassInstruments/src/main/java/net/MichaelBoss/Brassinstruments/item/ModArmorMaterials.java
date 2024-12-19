@@ -10,8 +10,14 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    Copper("copper", 26, new int[]{ 5, 7 , 5, 4 },25,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of());
+    COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
+    EXPOSED_COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
+    WEATHERED_COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
+    OXIDIZED_COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get()));
 
     private final String name;
     private final int durabilityMultiplier;
@@ -22,7 +28,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-    private static final int[] BASE_DURABILITY = { 11, 16, 16, 13 };
+    private static final int[] BASE_DURABILITY = { 160, 230, 210, 130 };
 
     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmount, int enchantmentValue, SoundEvent equipmentSound,
                       float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
@@ -38,7 +44,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public int getDurabilityForType(ArmorItem.Type type) {
-        return BASE_DURABILITY[type.ordinal()] * this.durabilityMultiplier;
+        return BASE_DURABILITY[type.ordinal()] + this.durabilityMultiplier;
     }
 
     @Override

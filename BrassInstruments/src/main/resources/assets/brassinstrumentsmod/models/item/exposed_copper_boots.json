@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "brassinstrumentsmod:item/exposed_copper_boots"
+  }
+}

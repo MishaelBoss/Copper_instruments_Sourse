@@ -1,13 +1,17 @@
 package net.MichaelBoss.Brassinstruments.item;
 
 import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum TutTiers implements Tier {
-    COPPER(2, 210,6, 5, 17, () -> Ingredient.of());
+public enum Tiers implements Tier {
+    COPPER(2, 210,6, 1, 17, () -> Ingredient.of(Items.COPPER_INGOT.getDefaultInstance())),
+    EXPOSED_COPPER(2, 210,6, 1, 17, () -> Ingredient.of(Items.COPPER_INGOT.getDefaultInstance())),
+    WEATHERED_COPPER(2, 210,6, 1, 17, () -> Ingredient.of(Items.COPPER_INGOT.getDefaultInstance())),
+    OXIDIZED_COPPER(2, 210,6, 1, 17, () -> Ingredient.of(Items.COPPER_INGOT.getDefaultInstance()));
 
     private final int miningLevel;
     private final int durability;
@@ -16,7 +20,7 @@ public enum TutTiers implements Tier {
     private final int enchantability;
     private final LazyLoadedValue<Ingredient> repairIngredient;
 
-    TutTiers(int miningLevel, int durability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    Tiers(int miningLevel, int durability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.durability = durability;
         this.miningSpeed = miningSpeed;

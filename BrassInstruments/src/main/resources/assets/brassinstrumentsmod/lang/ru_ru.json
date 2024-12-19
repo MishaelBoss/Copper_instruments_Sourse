@@ -5,13 +5,46 @@
   "item.brassinstrumentsmod.copper_shovel": "Медная лората",
   "item.brassinstrumentsmod.copper_hoe": "Медная мотыга",
 
+  "item.brassinstrumentsmod.exposed_copper_sword": "Потемневший медный меч",
+  "item.brassinstrumentsmod.exposed_copper_pickaxe": "Потемневшая медная кирка",
+  "item.brassinstrumentsmod.exposed_copper_axe": "Потемневшый медный тапор",
+  "item.brassinstrumentsmod.exposed_copper_shovel": "Потемневшая медная лората",
+  "item.brassinstrumentsmod.exposed_copper_hoe": "Потемневшая медная мотыга",
+
+  "item.brassinstrumentsmod.oxidized_copper_sword": "Состаренный медный меч",
+  "item.brassinstrumentsmod.oxidized_copper_pickaxe": "Состаренная медная кирка",
+  "item.brassinstrumentsmod.oxidized_copper_axe": "Состаренный медный тапор",
+  "item.brassinstrumentsmod.oxidized_copper_shovel": "Состаренная медная лората",
+  "item.brassinstrumentsmod.oxidized_copper_hoe": "Состаренная медная мотыга",
+
+  "item.brassinstrumentsmod.weathered_copper_sword": "Окисленный медный меч",
+  "item.brassinstrumentsmod.weathered_copper_pickaxe": "Окисленная медная кирка",
+  "item.brassinstrumentsmod.weathered_copper_axe": "Окисленный медный тапор",
+  "item.brassinstrumentsmod.weathered_copper_shovel": "Окисленная медная лората",
+  "item.brassinstrumentsmod.weathered_copper_hoe": "Окисленная медная мотыга",
+
   "item.brassinstrumentsmod.copper_shears": "Медные ножницы",
 
   "item.brassinstrumentsmod.copper_helmet": "Медный шлем",
   "item.brassinstrumentsmod.copper_chestplate": "Медный нагрудник",
-  "item.brassinstrumentsmod.copper_leggings": "Медные поножы",
+  "item.brassinstrumentsmod.copper_leggings": "Медные поножи",
   "item.brassinstrumentsmod.copper_boots": "Медные ботинки",
   "item.brassinstrumentsmod.copper_horse_armor": "Медная конская броня",
+
+  "item.brassinstrumentsmod.exposed_copper_helmet": "Потемневший медный шлем",
+  "item.brassinstrumentsmod.exposed_copper_chestplate": "Потемневший медный нагрудник",
+  "item.brassinstrumentsmod.exposed_copper_leggings": "Потемневшие медные поножи",
+  "item.brassinstrumentsmod.exposed_copper_boots": "Потемневший медные ботинки",
+
+  "item.brassinstrumentsmod.oxidized_copper_helmet": "Состаренный медный шлем",
+  "item.brassinstrumentsmod.oxidized_copper_chestplate": "Состаренный медный нагрудник",
+  "item.brassinstrumentsmod.oxidized_copper_leggings": "Состаренные медные поножи",
+  "item.brassinstrumentsmod.oxidized_copper_boots": "Состаренный медные ботинки",
+
+  "item.brassinstrumentsmod.weathered_copper_helmet": "Окисленный медный шлем",
+  "item.brassinstrumentsmod.weathered_copper_chestplate": "Окисленный медный нагрудник",
+  "item.brassinstrumentsmod.weathered_copper_leggings": "Окисленные медные поножи",
+  "item.brassinstrumentsmod.weathered_copper_boots": "Окисленный медные ботинки",
 
   "item.brassinstrumentsmod.copper_nugget": "Медный самородок"
 }
