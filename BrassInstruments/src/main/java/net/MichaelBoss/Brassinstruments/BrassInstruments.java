@@ -75,6 +75,8 @@ public class BrassInstruments
             event.accept(ModItems.COPPER_PICKAXE);
             event.accept(ModItems.COPPER_SHOVEL);
             event.accept(ModItems.COPPER_HOE);
+
+            //Item
             event.accept(ModItems.COPPER_SHEARS);
 
             event.accept(ModItems.EXPOSED_COPPER_PICKAXE);

@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.MichaelBoss.Brassinstruments.BrassInstruments;
 import net.MichaelBoss.Brassinstruments.item.ModArmorMaterials;
 import net.MichaelBoss.Brassinstruments.item.ModItems;
-import net.MichaelBoss.Brassinstruments.item.Tiers;
+import net.MichaelBoss.Brassinstruments.item.CopperTiers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.*;
@@ -93,15 +93,15 @@ public class ClientModEvents {
     private Map<Item, OxidizeData> armorOxidizeData;
 
     private final int[] OXIDIZE_DAMAGE_TOOL = new int[] {
-            Tiers.COPPER.getUses() / 4,
-            Tiers.EXPOSED_COPPER.getUses() * 1/2,
-            Tiers.WEATHERED_COPPER.getUses() * 3/4
+            CopperTiers.COPPER.getUses() / 4,
+            CopperTiers.EXPOSED_COPPER.getUses() * 1/2,
+            CopperTiers.WEATHERED_COPPER.getUses() * 3/4
     };
 
     private final int[] START_DAMAGE_TOOL = new int[] {
-            Tiers.EXPOSED_COPPER.getUses() / 4,
-            Tiers.WEATHERED_COPPER.getUses() * 1/2,
-            Tiers.OXIDIZED_COPPER.getUses() * 3/4
+            CopperTiers.EXPOSED_COPPER.getUses() / 4,
+            CopperTiers.WEATHERED_COPPER.getUses() * 1/2,
+            CopperTiers.OXIDIZED_COPPER.getUses() * 3/4
     };
 
     private final int[][] OXIDIZE_DAMAGE_ARMOR = new int [][] {

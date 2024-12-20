@@ -24,48 +24,48 @@ public class ModItems {
             new Item(new Item.Properties()));
 
     public static final RegistryObject<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
-            ()-> new SwordItem(Tiers.COPPER, 3,0.6f, new Item.Properties()));
+            ()-> new SwordItem(CopperTiers.COPPER, 3,0.6f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
-            ()-> new PickaxeItem(Tiers.COPPER, 3, 0.5f, new Item.Properties()));
+            ()-> new PickaxeItem(CopperTiers.COPPER, 3, 0.5f, new Item.Properties()));
     public static final RegistryObject<AxeItem> COPPER_AXE = ITEMS.register("copper_axe",
-            ()-> new AxeItem(Tiers.COPPER, 7, -3.2f, new Item.Properties()));
+            ()-> new AxeItem(CopperTiers.COPPER, 7, -3.2f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> COPPER_SHOVEL = ITEMS.register("copper_shovel",
-            ()-> new ShovelItem(Tiers.COPPER, 0.5f, 0.2f, new Item.Properties()));
+            ()-> new ShovelItem(CopperTiers.COPPER, 0.5f, 0.2f, new Item.Properties()));
     public static final RegistryObject<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
-            ()-> new HoeItem(Tiers.COPPER, 0, 1.3f, new Item.Properties()));
+            ()-> new HoeItem(CopperTiers.COPPER, 0, 1.3f, new Item.Properties()));
 
     public static final RegistryObject<SwordItem> EXPOSED_COPPER_SWORD = ITEMS.register("exposed_copper_sword",
-            ()-> new SwordItem(Tiers.EXPOSED_COPPER, 3,0.6f, new Item.Properties()));
+            ()-> new SwordItem(CopperTiers.EXPOSED_COPPER, 3,0.6f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> EXPOSED_COPPER_PICKAXE = ITEMS.register("exposed_copper_pickaxe",
-            ()-> new PickaxeItem(Tiers.EXPOSED_COPPER, 3, 0.5f, new Item.Properties()));
+            ()-> new PickaxeItem(CopperTiers.EXPOSED_COPPER, 3, 0.5f, new Item.Properties()));
     public static final RegistryObject<AxeItem> EXPOSED_COPPER_AXE = ITEMS.register("exposed_copper_axe",
-            ()-> new AxeItem(Tiers.EXPOSED_COPPER, 7, -3.2f, new Item.Properties()));
+            ()-> new AxeItem(CopperTiers.EXPOSED_COPPER, 7, -3.2f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> EXPOSED_COPPER_SHOVEL = ITEMS.register("exposed_copper_shovel",
-            ()-> new ShovelItem(Tiers.EXPOSED_COPPER, 0.5f, 0.2f, new Item.Properties()));
+            ()-> new ShovelItem(CopperTiers.EXPOSED_COPPER, 0.5f, 0.2f, new Item.Properties()));
     public static final RegistryObject<HoeItem> EXPOSED_COPPER_HOE = ITEMS.register("exposed_copper_hoe",
-            ()-> new HoeItem(Tiers.EXPOSED_COPPER, 0, 1.3f, new Item.Properties()));
+            ()-> new HoeItem(CopperTiers.EXPOSED_COPPER, 0, 1.3f, new Item.Properties()));
 
     public static final RegistryObject<SwordItem> WEATHERED_COPPER_SWORD = ITEMS.register("weathered_copper_sword",
-            ()-> new SwordItem(Tiers.WEATHERED_COPPER, 3,0.6f, new Item.Properties()));
+            ()-> new SwordItem(CopperTiers.WEATHERED_COPPER, 3,0.6f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> WEATHERED_COPPER_PICKAXE = ITEMS.register("weathered_copper_pickaxe",
-            ()-> new PickaxeItem(Tiers.WEATHERED_COPPER, 3, 0.5f, new Item.Properties()));
+            ()-> new PickaxeItem(CopperTiers.WEATHERED_COPPER, 3, 0.5f, new Item.Properties()));
     public static final RegistryObject<AxeItem> WEATHERED_COPPER_AXE = ITEMS.register("weathered_copper_axe",
-            ()-> new AxeItem(Tiers.WEATHERED_COPPER, 7, -3.2f, new Item.Properties()));
+            ()-> new AxeItem(CopperTiers.WEATHERED_COPPER, 7, -3.2f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> WEATHERED_COPPER_SHOVEL = ITEMS.register("weathered_copper_shovel",
-            ()-> new ShovelItem(Tiers.WEATHERED_COPPER, 0.5f, 0.2f, new Item.Properties()));
+            ()-> new ShovelItem(CopperTiers.WEATHERED_COPPER, 0.5f, 0.2f, new Item.Properties()));
     public static final RegistryObject<HoeItem> WEATHERED_COPPER_HOE = ITEMS.register("weathered_copper_hoe",
-            ()-> new HoeItem(Tiers.WEATHERED_COPPER, 0, 1.3f, new Item.Properties()));
+            ()-> new HoeItem(CopperTiers.WEATHERED_COPPER, 0, 1.3f, new Item.Properties()));
 
     public static final RegistryObject<SwordItem> OXIDIZED_COPPER_SWORD = ITEMS.register("oxidized_copper_sword",
-            ()-> new SwordItem(Tiers.OXIDIZED_COPPER, 3,0.6f, new Item.Properties()));
+            ()-> new SwordItem(CopperTiers.OXIDIZED_COPPER, 3,0.6f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> OXIDIZED_COPPER_PICKAXE = ITEMS.register("oxidized_copper_pickaxe",
-            ()-> new PickaxeItem(Tiers.OXIDIZED_COPPER, 3, 0.5f, new Item.Properties()));
+            ()-> new PickaxeItem(CopperTiers.OXIDIZED_COPPER, 3, 0.5f, new Item.Properties()));
     public static final RegistryObject<AxeItem> OXIDIZED_COPPER_AXE = ITEMS.register("oxidized_copper_axe",
-            ()-> new AxeItem(Tiers.OXIDIZED_COPPER, 7, -3.2f, new Item.Properties()));
+            ()-> new AxeItem(CopperTiers.OXIDIZED_COPPER, 7, -3.2f, new Item.Properties()));
     public static final RegistryObject<ShovelItem> OXIDIZED_COPPER_SHOVEL = ITEMS.register("oxidized_copper_shovel",
-            ()-> new ShovelItem(Tiers.OXIDIZED_COPPER, 0.5f, 0.2f, new Item.Properties()));
+            ()-> new ShovelItem(CopperTiers.OXIDIZED_COPPER, 0.5f, 0.2f, new Item.Properties()));
     public static final RegistryObject<HoeItem> OXIDIZED_COPPER_HOE = ITEMS.register("oxidized_copper_hoe",
-            ()-> new HoeItem(Tiers.OXIDIZED_COPPER, 0, 1.3f, new Item.Properties()));
+            ()-> new HoeItem(CopperTiers.OXIDIZED_COPPER, 0, 1.3f, new Item.Properties()));
 
     public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
             ()-> new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
