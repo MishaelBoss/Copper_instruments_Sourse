@@ -35,6 +35,17 @@ public class ModItems {
     public static final RegistryObject<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
             ()-> new HoeItem(CopperTiers.COPPER, 0, 1.3f, new Item.Properties()));
 
+    public static final RegistryObject<SwordItem> WAXED_COPPER_SWORD = ITEMS.register("waxed_copper_sword",
+            ()-> new SwordItem(CopperTiers.COPPER, 3,0.6f ,new Item.Properties()));
+    public static final RegistryObject<PickaxeItem> WAXED_COPPER_PICKAXE = ITEMS.register("waxed_copper_pickaxe",
+            ()-> new PickaxeItem(CopperTiers.COPPER, 3, 0.5f, new Item.Properties()));
+    public static final RegistryObject<AxeItem> WAXED_COPPER_AXE = ITEMS.register("waxed_copper_axe",
+            ()-> new AxeItem(CopperTiers.COPPER, 7, -3.2f, new Item.Properties()));
+    public static final RegistryObject<ShovelItem> WAXED_COPPER_SHOVEL = ITEMS.register("waxed_copper_shovel",
+            ()-> new ShovelItem(CopperTiers.COPPER, 0.5f, 0.2f, new Item.Properties()));
+    public static final RegistryObject<HoeItem> WAXED_COPPER_HOE = ITEMS.register("waxed_copper_hoe",
+            ()-> new HoeItem(CopperTiers.COPPER, 0, 1.3f, new Item.Properties()));
+
     public static final RegistryObject<SwordItem> EXPOSED_COPPER_SWORD = ITEMS.register("exposed_copper_sword",
             ()-> new SwordItem(CopperTiers.EXPOSED_COPPER, 3,-0.2f, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> EXPOSED_COPPER_PICKAXE = ITEMS.register("exposed_copper_pickaxe",

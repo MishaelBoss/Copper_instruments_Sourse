@@ -1,6 +1,5 @@
 package net.MichaelBoss.Brassinstruments.event;
 
-import com.mojang.logging.LogUtils;
 import net.MichaelBoss.Brassinstruments.item.CopperTiers;
 import net.MichaelBoss.Brassinstruments.item.ModArmorMaterials;
 import net.MichaelBoss.Brassinstruments.item.ModItems;
@@ -18,15 +17,13 @@ import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.RegistryObject;
-import org.slf4j.Logger;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class OxidizeEventHandler {
-	
-	public static final Logger LOGGER = LogUtils.getLogger();
+
 	private boolean mapsInitialized;
 
 	private Map<Item, OxidizeData> toolOxidizeData;
@@ -145,23 +142,42 @@ public class OxidizeEventHandler {
 
 	@SubscribeEvent
 	public void onBreakEvent(BlockEvent.BreakEvent event) {
-		if(!event.getPlayer().level().isClientSide()) {
-			Player player = event.getPlayer();
+		Player player = event.getPlayer();
+		ItemStack mainHandItem = player.getMainHandItem();
+		if(!event.getPlayer().level().isClientSide() &&
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SWORD.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_PICKAXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_AXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SHOVEL.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_HOE.get() == false) {
 			oxidizeTool(player);
 		}
 	}
 
 	@SubscribeEvent
 	public void onToolModificationEvent(BlockEvent.BlockToolModificationEvent event) {
-		if(!event.getPlayer().level().isClientSide()) {
-			Player player = event.getPlayer();
+		Player player = event.getPlayer();
+		ItemStack mainHandItem = player.getMainHandItem();
+		if(!event.getPlayer().level().isClientSide() &&
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SWORD.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_PICKAXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_AXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SHOVEL.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_HOE.get() == false) {
 			oxidizeTool(player);
 		}
 	}
 
 	@SubscribeEvent
 	public void onLivingDamageEvent(LivingDamageEvent event) {
-		if(!event.getEntity().level().isClientSide()) {
+		LivingEntity player = event.getEntity();
+		ItemStack mainHandItem = player.getMainHandItem();
+		if(!event.getEntity().level().isClientSide() &&
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SWORD.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_PICKAXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_AXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SHOVEL.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_HOE.get() == false) {
 			Entity entity = event.getSource().getDirectEntity();
 			if(entity instanceof Player) {
 				oxidizeTool((Player) entity);

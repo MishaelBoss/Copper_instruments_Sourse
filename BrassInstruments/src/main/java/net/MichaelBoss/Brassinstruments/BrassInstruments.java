@@ -46,6 +46,9 @@ public class BrassInstruments
             event.accept(ModItems.OXIDIZED_COPPER_SWORD);
             event.accept(ModItems.OXIDIZED_COPPER_AXE);
 
+            event.accept(ModItems.WAXED_COPPER_SWORD);
+            event.accept(ModItems.WAXED_COPPER_AXE);
+
             //Item
             event.accept(ModItems.COPPER_HORSE_ARMOR);
 
@@ -89,6 +92,10 @@ public class BrassInstruments
             event.accept(ModItems.OXIDIZED_COPPER_PICKAXE);
             event.accept(ModItems.OXIDIZED_COPPER_SHOVEL);
             event.accept(ModItems.OXIDIZED_COPPER_HOE);
+
+            event.accept(ModItems.WAXED_COPPER_PICKAXE);
+            event.accept(ModItems.WAXED_COPPER_SHOVEL);
+            event.accept(ModItems.WAXED_COPPER_HOE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.COPPER_NUGGET);
