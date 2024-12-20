@@ -1,22 +1,32 @@
 package net.MichaelBoss.Brassinstruments.item;
 
+import com.mojang.datafixers.util.Either;
 import net.MichaelBoss.Brassinstruments.BrassInstruments;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderOwner;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
+import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Stream;
 
-public enum ModArmorMaterials implements ArmorMaterial {
+public enum ModArmorMaterials implements ArmorMaterial, Holder<ArmorMaterial> {
     COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
-    EXPOSED_COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+    EXPOSED_COPPER("exposed_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
-    WEATHERED_COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+    WEATHERED_COPPER("oxidized_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
-    OXIDIZED_COPPER("copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+    OXIDIZED_COPPER("weathered_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get()));
 
     private final String name;
@@ -80,5 +90,60 @@ public enum ModArmorMaterials implements ArmorMaterial {
     @Override
     public float getKnockbackResistance() {
         return this.knockbackResistance;
+    }
+
+    @Override
+    public ArmorMaterial value() {
+        return null;
+    }
+
+    @Override
+    public boolean isBound() {
+        return false;
+    }
+
+    @Override
+    public boolean is(ResourceLocation resourceLocation) {
+        return false;
+    }
+
+    @Override
+    public boolean is(ResourceKey<ArmorMaterial> resourceKey) {
+        return false;
+    }
+
+    @Override
+    public boolean is(Predicate<ResourceKey<ArmorMaterial>> predicate) {
+        return false;
+    }
+
+    @Override
+    public boolean is(TagKey<ArmorMaterial> tagKey) {
+        return false;
+    }
+
+    @Override
+    public Stream<TagKey<ArmorMaterial>> tags() {
+        return Stream.empty();
+    }
+
+    @Override
+    public Either<ResourceKey<ArmorMaterial>, ArmorMaterial> unwrap() {
+        return null;
+    }
+
+    @Override
+    public Optional<ResourceKey<ArmorMaterial>> unwrapKey() {
+        return Optional.empty();
+    }
+
+    @Override
+    public Kind kind() {
+        return null;
+    }
+
+    @Override
+    public boolean canSerializeIn(HolderOwner<ArmorMaterial> holderOwner) {
+        return false;
     }
 }

@@ -1,6 +1,6 @@
 package net.MichaelBoss.Brassinstruments;
 
-import com.mojang.logging.LogUtils;
+import net.MichaelBoss.Brassinstruments.event.OxidizeEventHandler;
 import net.MichaelBoss.Brassinstruments.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,13 +10,11 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
 @Mod(BrassInstruments.MOD_ID)
 public class BrassInstruments
 {
     public static final String MOD_ID = "brassinstrumentsmod";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public BrassInstruments()
     {
@@ -27,6 +25,7 @@ public class BrassInstruments
         modEventBus.addListener(this::addCreative);
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new OxidizeEventHandler());
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

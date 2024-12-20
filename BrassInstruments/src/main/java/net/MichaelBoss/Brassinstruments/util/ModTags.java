@@ -21,5 +21,12 @@ public class ModTags {
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(BrassInstruments.MOD_ID, name));
         }
+
+        public static final TagKey<Item> INGOTS = createForgeTag("ingots");
+        public static final TagKey<Item> INGOTS_COPPER = createForgeTag("ingots/copper");
+
+        private static TagKey<Item> createForgeTag(String name) {
+            return ItemTags.create(new ResourceLocation("forge", name));
+        }
     }
 }
