@@ -53,6 +53,7 @@
   "item.brassinstrumentsmod.waxed_copper_chestplate": "Waxed Copper Chestplate",
   "item.brassinstrumentsmod.waxed_copper_leggings": "Waxed Copper Leggings",
   "item.brassinstrumentsmod.waxed_copper_boots": "Waxed Copper Boots",
+
   "item.brassinstrumentsmod.exposed_copper_helmet": "Exposed Copper Helmet",
   "item.brassinstrumentsmod.exposed_copper_chestplate": "Exposed Copper Chestplate",
   "item.brassinstrumentsmod.exposed_copper_leggings": "Exposed Copper Leggings",
@@ -68,10 +69,20 @@
   "item.brassinstrumentsmod.oxidized_copper_leggings": "Oxidized Copper Leggings",
   "item.brassinstrumentsmod.oxidized_copper_boots": "Oxidized Copper Boots",
 
+  "item.brassinstrumentsmod.waxed_oxidized_copper_helmet": "Waxed Oxidized Copper Helmet",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_chestplate": "Waxed Oxidized Copper Chestplate",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_leggings": "Waxed Oxidized Copper Leggings",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_boots": "Waxed Oxidized Copper Boots",
+
   "item.brassinstrumentsmod.weathered_copper_helmet": "Weathered Copper Helmet",
   "item.brassinstrumentsmod.weathered_copper_chestplate": "Weathered Copper Chestplate",
   "item.brassinstrumentsmod.weathered_copper_leggings": "Weathered Copper Leggings",
   "item.brassinstrumentsmod.weathered_copper_boots": "Weathered Copper Boots",
+
+  "item.brassinstrumentsmod.waxed_weathered_copper_helmet": "Waxed Weathered Copper Helmet",
+  "item.brassinstrumentsmod.waxed_weathered_copper_chestplate": "Waxed Weathered Copper Chestplate",
+  "item.brassinstrumentsmod.waxed_weathered_copper_leggings": "Waxed Weathered Copper Leggings",
+  "item.brassinstrumentsmod.waxed_weathered_copper_boots": "Waxed Weathered Copper Boots",
 
   "item.brassinstrumentsmod.copper_nugget": "Copper Nugget"
 }

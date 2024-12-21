@@ -139,6 +139,15 @@ public class ModItems {
     public static final RegistryObject<Item> EXPOSED_COPPER_BOOTS = ITEMS.register("exposed_copper_boots",
             ()-> new ModArmorItem(ModArmorMaterials.EXPOSED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> WAXED_EXPOSED_COPPER_HELMET = ITEMS.register("waxed_exposed_copper_helmet",
+            ()-> new ModArmorItem(ModArmorMaterials.EXPOSED_COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_EXPOSED_COPPER_CHESTPLATE = ITEMS.register("waxed_exposed_copper_chestplate",
+            ()-> new ModArmorItem(ModArmorMaterials.EXPOSED_COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_EXPOSED_COPPER_LEGGINGS = ITEMS.register("waxed_exposed_copper_leggings",
+            ()-> new ModArmorItem(ModArmorMaterials.EXPOSED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_EXPOSED_COPPER_BOOTS = ITEMS.register("waxed_exposed_copper_boots",
+            ()-> new ModArmorItem(ModArmorMaterials.EXPOSED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     public static final RegistryObject<Item> WEATHERED_COPPER_HELMET = ITEMS.register("weathered_copper_helmet",
             ()-> new ModArmorItem(ModArmorMaterials.WEATHERED_COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> WEATHERED_COPPER_CHESTPLATE = ITEMS.register("weathered_copper_chestplate",
@@ -148,6 +157,15 @@ public class ModItems {
     public static final RegistryObject<Item> WEATHERED_COPPER_BOOTS = ITEMS.register("weathered_copper_boots",
             ()-> new ModArmorItem(ModArmorMaterials.WEATHERED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> WAXED_WEATHERED_COPPER_HELMET = ITEMS.register("waxed_weathered_copper_helmet",
+            ()-> new ModArmorItem(ModArmorMaterials.WEATHERED_COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_WEATHERED_COPPER_CHESTPLATE = ITEMS.register("waxed_weathered_copper_chestplate",
+            ()-> new ModArmorItem(ModArmorMaterials.WEATHERED_COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_WEATHERED_COPPER_LEGGINGS = ITEMS.register("waxed_weathered_copper_leggings",
+            ()-> new ModArmorItem(ModArmorMaterials.WEATHERED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_WEATHERED_COPPER_BOOTS = ITEMS.register("waxed_weathered_copper_boots",
+            ()-> new ModArmorItem(ModArmorMaterials.WEATHERED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     public static final RegistryObject<Item> OXIDIZED_COPPER_HELMET = ITEMS.register("oxidized_copper_helmet",
             ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> OXIDIZED_COPPER_CHESTPLATE = ITEMS.register("oxidized_copper_chestplate",
@@ -155,6 +173,15 @@ public class ModItems {
     public static final RegistryObject<Item> OXIDIZED_COPPER_LEGGINGS = ITEMS.register("oxidized_copper_leggings",
             ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> OXIDIZED_COPPER_BOOTS = ITEMS.register("oxidized_copper_boots",
+            ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> WAXED_OXIDIZED_COPPER_HELMET = ITEMS.register("waxed_oxidized_copper_helmet",
+            ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_OXIDIZED_COPPER_CHESTPLATE = ITEMS.register("waxed_oxidized_copper_chestplate",
+            ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_OXIDIZED_COPPER_LEGGINGS = ITEMS.register("waxed_oxidized_copper_leggings",
+            ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> WAXED_OXIDIZED_COPPER_BOOTS = ITEMS.register("waxed_oxidized_copper_boots",
             ()-> new ModArmorItem(ModArmorMaterials.OXIDIZED_COPPER, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> COPPER_HORSE_ARMOR = ITEMS.register("copper_horse_armor",

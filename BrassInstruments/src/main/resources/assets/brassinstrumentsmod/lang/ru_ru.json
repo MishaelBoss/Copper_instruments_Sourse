@@ -65,15 +65,30 @@
   "item.brassinstrumentsmod.exposed_copper_leggings": "Потемневшие медные поножи",
   "item.brassinstrumentsmod.exposed_copper_boots": "Потемневший медные ботинки",
 
+  "item.brassinstrumentsmod.waxed_exposed_copper_helmet": "Вощеный Потемневший медный шлем",
+  "item.brassinstrumentsmod.waxed_exposed_copper_chestplate": "Вощеный Потемневший медный нагрудник",
+  "item.brassinstrumentsmod.waxed_exposed_copper_leggings": "Вощеные Потемневшие медные поножи",
+  "item.brassinstrumentsmod.waxed_exposed_copper_boots": "Вощеный Потемневший медные ботинки",
+
   "item.brassinstrumentsmod.oxidized_copper_helmet": "Состаренный медный шлем",
   "item.brassinstrumentsmod.oxidized_copper_chestplate": "Состаренный медный нагрудник",
   "item.brassinstrumentsmod.oxidized_copper_leggings": "Состаренные медные поножи",
   "item.brassinstrumentsmod.oxidized_copper_boots": "Состаренный медные ботинки",
 
+  "item.brassinstrumentsmod.waxed_oxidized_copper_helmet": "Вощеный Состаренный медный шлем",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_chestplate": "Вощеный Состаренный медный нагрудник",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_leggings": "Вощеные Состаренные медные поножи",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_boots": "Вощеный Состаренный медные ботинки",
+
   "item.brassinstrumentsmod.weathered_copper_helmet": "Окисленный медный шлем",
   "item.brassinstrumentsmod.weathered_copper_chestplate": "Окисленный медный нагрудник",
   "item.brassinstrumentsmod.weathered_copper_leggings": "Окисленные медные поножи",
   "item.brassinstrumentsmod.weathered_copper_boots": "Окисленный медные ботинки",
+
+  "item.brassinstrumentsmod.waxed_weathered_copper_helmet": "Вощеный Окисленный медный шлем",
+  "item.brassinstrumentsmod.waxed_weathered_copper_chestplate": "Вощеный Окисленный медный нагрудник",
+  "item.brassinstrumentsmod.waxed_weathered_copper_leggings": "Вощеные Окисленные медные поножи",
+  "item.brassinstrumentsmod.waxed_weathered_copper_boots": "Вощеный Окисленный медные ботинки",
 
   "item.brassinstrumentsmod.copper_nugget": "Медный самородок"
 }

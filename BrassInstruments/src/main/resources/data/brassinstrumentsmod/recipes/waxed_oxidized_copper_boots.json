@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:honeycomb"
+    },
+    "X": {
+      "item": "brassinstrumentsmod:oxidized_copper_boots"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+     "item": "brassinstrumentsmod:waxed_oxidized_copper_boots"
+  }
+}
