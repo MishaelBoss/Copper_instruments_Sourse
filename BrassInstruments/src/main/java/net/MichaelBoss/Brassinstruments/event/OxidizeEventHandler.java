@@ -186,7 +186,13 @@ public class OxidizeEventHandler {
 	}
 
 	private void oxidizeTool(Player player) {
-		if(!mapsInitialized) {
+		ItemStack mainHandItem = player.getMainHandItem();
+		if(!mapsInitialized &&
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SWORD.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_PICKAXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_AXE.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_SHOVEL.get() == false ||
+				mainHandItem.getItem() == ModItems.WAXED_COPPER_HOE.get() == false) {
 			initializeMaps();
 		}
 		
@@ -220,8 +226,15 @@ public class OxidizeEventHandler {
 
 	@SubscribeEvent
 	public void oxidizeArmor(LivingDamageEvent event) {
-		if(!mapsInitialized) {
-			initializeMaps();
+		Entity player = event.getEntity();
+		Iterable<ItemStack> armorSlots = player.getArmorSlots();
+		for (ItemStack armorSlot : armorSlots){
+			if(!mapsInitialized && armorSlot.getItem() == ModItems.WAXED_COPPER_HELMET.get() ||
+					armorSlot.getItem() == ModItems.WAXED_COPPER_CHESTPLATE.get() ||
+					armorSlot.getItem() == ModItems.WAXED_COPPER_LEGGINGS.get() ||
+					armorSlot.getItem() == ModItems.WAXED_COPPER_BOOTS.get()) {
+				initializeMaps();
+			}
 		}
 		
 		LivingEntity hurtEntity = event.getEntity();

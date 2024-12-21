@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:honeycomb"
+    },
+    "X": {
+      "item": "brassinstrumentsmod:weathered_copper_axe"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+     "item": "brassinstrumentsmod:waxed_weathered_copper_axe",
+     "count": 1
+  }
+}

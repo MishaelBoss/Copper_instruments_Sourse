@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:honeycomb"
+    },
+    "X": {
+      "item": "brassinstrumentsmod:exposed_copper_sword"
+    }
+  },
+  "pattern": [
+    "X#"
+  ],
+  "result": {
+     "item": "brassinstrumentsmod:waxed_exposed_copper_sword",
+     "count": 1
+  }
+}

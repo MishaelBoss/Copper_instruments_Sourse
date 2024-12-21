@@ -49,6 +49,15 @@ public class BrassInstruments
             event.accept(ModItems.WAXED_COPPER_SWORD);
             event.accept(ModItems.WAXED_COPPER_AXE);
 
+            event.accept(ModItems.WAXED_EXPOSED_COPPER_SWORD);
+            event.accept(ModItems.WAXED_EXPOSED_COPPER_AXE);
+
+            event.accept(ModItems.WAXED_WEATHERED_COPPER_SWORD);
+            event.accept(ModItems.WAXED_WEATHERED_COPPER_AXE);
+
+            event.accept(ModItems.WAXED_OXIDIZED_COPPER_SWORD);
+            event.accept(ModItems.WAXED_OXIDIZED_COPPER_AXE);
+
             //Item
             event.accept(ModItems.COPPER_HORSE_ARMOR);
 
@@ -72,6 +81,16 @@ public class BrassInstruments
             event.accept(ModItems.OXIDIZED_COPPER_CHESTPLATE);
             event.accept(ModItems.OXIDIZED_COPPER_LEGGINGS);
             event.accept(ModItems.OXIDIZED_COPPER_BOOTS);
+
+            event.accept(ModItems.WAXED_COPPER_HELMET);
+            event.accept(ModItems.WAXED_COPPER_CHESTPLATE);
+            event.accept(ModItems.WAXED_COPPER_LEGGINGS);
+            event.accept(ModItems.WAXED_COPPER_BOOTS);
+
+            event.accept(ModItems.WAXED_COPPER_HELMET);
+            event.accept(ModItems.WAXED_COPPER_CHESTPLATE);
+            event.accept(ModItems.WAXED_COPPER_LEGGINGS);
+            event.accept(ModItems.WAXED_COPPER_BOOTS);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.COPPER_PICKAXE);
@@ -96,6 +115,18 @@ public class BrassInstruments
             event.accept(ModItems.WAXED_COPPER_PICKAXE);
             event.accept(ModItems.WAXED_COPPER_SHOVEL);
             event.accept(ModItems.WAXED_COPPER_HOE);
+
+            event.accept(ModItems.WAXED_EXPOSED_COPPER_PICKAXE);
+            event.accept(ModItems.WAXED_EXPOSED_COPPER_SHOVEL);
+            event.accept(ModItems.WAXED_EXPOSED_COPPER_HOE);
+
+            event.accept(ModItems.WAXED_WEATHERED_COPPER_PICKAXE);
+            event.accept(ModItems.WAXED_WEATHERED_COPPER_SHOVEL);
+            event.accept(ModItems.WAXED_WEATHERED_COPPER_HOE);
+
+            event.accept(ModItems.WAXED_OXIDIZED_COPPER_PICKAXE);
+            event.accept(ModItems.WAXED_OXIDIZED_COPPER_SHOVEL);
+            event.accept(ModItems.WAXED_OXIDIZED_COPPER_HOE);
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.COPPER_NUGGET);

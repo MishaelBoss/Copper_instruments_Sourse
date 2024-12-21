@@ -17,17 +17,35 @@
   "item.brassinstrumentsmod.exposed_copper_shovel": "Потемневшая медная лората",
   "item.brassinstrumentsmod.exposed_copper_hoe": "Потемневшая медная мотыга",
 
+  "item.brassinstrumentsmod.waxed_exposed_copper_sword": "Вощеный Потемневший Медный меч",
+  "item.brassinstrumentsmod.waxed_exposed_copper_pickaxe": "Вощеная Потемневшая медная кирка",
+  "item.brassinstrumentsmod.waxed_exposed_copper_axe": "Вощеный Потемневший Медный тапор",
+  "item.brassinstrumentsmod.waxed_exposed_copper_shovel": "Вощеная Потемневшая Медная лората",
+  "item.brassinstrumentsmod.waxed_exposed_copper_hoe": "Вощеная Потемневшая Медная мотыга",
+
   "item.brassinstrumentsmod.oxidized_copper_sword": "Состаренный медный меч",
   "item.brassinstrumentsmod.oxidized_copper_pickaxe": "Состаренная медная кирка",
   "item.brassinstrumentsmod.oxidized_copper_axe": "Состаренный медный тапор",
   "item.brassinstrumentsmod.oxidized_copper_shovel": "Состаренная медная лората",
   "item.brassinstrumentsmod.oxidized_copper_hoe": "Состаренная медная мотыга",
 
+  "item.brassinstrumentsmod.waxed_oxidized_copper_sword": "Вощеный Состаренный Медный меч",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_pickaxe": "Вощеная Состаренная медная кирка",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_axe": "Вощеный Состаренный Медный тапор",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_shovel": "Вощеная Состаренная Медная лората",
+  "item.brassinstrumentsmod.waxed_oxidized_copper_hoe": "Вощеная Состаренная Медная мотыга",
+
   "item.brassinstrumentsmod.weathered_copper_sword": "Окисленный медный меч",
   "item.brassinstrumentsmod.weathered_copper_pickaxe": "Окисленная медная кирка",
   "item.brassinstrumentsmod.weathered_copper_axe": "Окисленный медный тапор",
   "item.brassinstrumentsmod.weathered_copper_shovel": "Окисленная медная лората",
   "item.brassinstrumentsmod.weathered_copper_hoe": "Окисленная медная мотыга",
+
+  "item.brassinstrumentsmod.waxed_weathered_copper_sword": "Вощеный Окисленный Медный меч",
+  "item.brassinstrumentsmod.waxed_weathered_copper_pickaxe": "Вощеная Окисленная медная кирка",
+  "item.brassinstrumentsmod.waxed_weathered_copper_axe": "Вощеный Окисленный Медный тапор",
+  "item.brassinstrumentsmod.waxed_weathered_copper_shovel": "Вощеная Окисленная Медная лората",
+  "item.brassinstrumentsmod.waxed_weathered_copper_hoe": "Вощеная Окисленная Медная мотыга",
 
   "item.brassinstrumentsmod.copper_shears": "Медные ножницы",
 
@@ -36,6 +54,11 @@
   "item.brassinstrumentsmod.copper_leggings": "Медные поножи",
   "item.brassinstrumentsmod.copper_boots": "Медные ботинки",
   "item.brassinstrumentsmod.copper_horse_armor": "Медная конская броня",
+
+  "item.brassinstrumentsmod.waxed_copper_helmet": "Вощеный Медный шлем",
+  "item.brassinstrumentsmod.waxed_copper_chestplate": "Вощеный Медный нагрудник",
+  "item.brassinstrumentsmod.waxed_copper_leggings": "Вощеные Медные поножи",
+  "item.brassinstrumentsmod.waxed_copper_boots": "Вощеные Медные ботинки",
 
   "item.brassinstrumentsmod.exposed_copper_helmet": "Потемневший медный шлем",
   "item.brassinstrumentsmod.exposed_copper_chestplate": "Потемневший медный нагрудник",
