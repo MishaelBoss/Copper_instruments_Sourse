@@ -1,0 +1,10 @@
+{
+  "disc.copper_music": {
+    "sounds": [
+      {
+        "name": "brassinstrumentsmod:copper_music",
+        "stream": true
+      }
+    ]
+  }
+}
