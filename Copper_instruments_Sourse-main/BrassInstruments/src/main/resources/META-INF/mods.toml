@@ -6,14 +6,14 @@ issueTrackerURL="https://github.com/MishaelBoss/Copper_instruments_Sourse/issues
 
 [[mods]]
 modId="brassinstrumentsmod"
-version="1.1.5"
+version="1.2.0"
 displayName="BrassInstruments"
 updateJSONURL="https://raw.githubusercontent.com/MishaelBoss/ModUpdateRepo/refs/heads/main/1.20.4_BrassInstruments_update.json"
 displayURL="https://github.com/MishaelBoss"
 logoFile="assets/brassinstrumentsmod/brassinstrumentsmod-forge-logo.png"
 #credits="Спасибо что скачал данный мод"
 authors="MichaelBoss"
-description="Данный мод добавляет новые инструменты и новою броню из меди \nТекстуры и концепции были взяты автороми redy1aye иShadowGry"
+description="Данный мод добавляет новые инструменты и новою броню из меди \nТекстуры и концепции были взяты автороми redy1aye и ShadowGry"
 
 [[dependencies.brassinstrumentsmod]]
     modId="forge"
