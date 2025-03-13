@@ -1,5 +1,6 @@
 package net.MichaelBoss.Brassinstruments;
 
+import com.mojang.logging.LogUtils;
 import net.MichaelBoss.Brassinstruments.event.OxidizeEventHandler;
 import net.MichaelBoss.Brassinstruments.item.ModItems;
 import net.MichaelBoss.Brassinstruments.sound.Sounds;
@@ -10,21 +11,22 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.slf4j.Logger;
 
 @Mod(BrassInstruments.MOD_ID)
 public class BrassInstruments
 {
     public static final String MOD_ID = "brassinstrumentsmod";
+    public static final Logger LOGGER = LogUtils.getLogger();
 
-    public BrassInstruments()
+    public BrassInstruments(FMLJavaModLoadingContext context)
     {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
         Sounds.register(modEventBus);
@@ -34,11 +36,11 @@ public class BrassInstruments
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new OxidizeEventHandler());
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onGatherData);
+        context.getModEventBus().addListener(this::onCommonSetup);
+        context.getModEventBus().addListener(this::onClientSetup);
+        context.getModEventBus().addListener(this::onGatherData);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event){

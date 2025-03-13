@@ -25,6 +25,7 @@ import java.util.Map;
 public class OxidizeEventHandler {
 
 	private boolean mapsInitialized;
+//	private int oxidized;
 
 	private Map<Item, OxidizeData> toolOxidizeData;
 	private Map<Item, OxidizeData> armorOxidizeData;

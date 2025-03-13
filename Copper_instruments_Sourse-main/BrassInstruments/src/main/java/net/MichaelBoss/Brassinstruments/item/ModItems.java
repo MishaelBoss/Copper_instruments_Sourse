@@ -31,7 +31,7 @@ public class ModItems {
             ()-> new ShearsItem(new Item.Properties().stacksTo(1).durability(CopperTiers.COPPER.getUses())));
 
     public static final RegistryObject<Item> COPPER_MUSIC_MUSIC_DISK = ITEMS.register("copper_music_disc",
-            () -> new RecordItem(1, Sounds.COPPER_MUSIC, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 2080));
+            () -> new RecordItem(1, Sounds.COPPER_MUSIC_SOUND, new Item.Properties().stacksTo(1), 2080));
 
     public static final RegistryObject<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
             ()-> new SwordItem(CopperTiers.COPPER, 3,0.6f ,new Item.Properties()));
