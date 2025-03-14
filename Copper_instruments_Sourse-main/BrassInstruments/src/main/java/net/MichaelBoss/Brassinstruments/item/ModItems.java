@@ -18,7 +18,20 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
+    public static final RegistryObject<Item> EXPOSED_COPPER_INGOT = ITEMS.register("exposed_copper_ingot", () ->
+            new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OXIDIZED_COPPER_INGOT = ITEMS.register("oxidized_copper_ingot", () ->
+            new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WEATHERED_COPPER_INGOT = ITEMS.register("weathered_copper_ingot", () ->
+            new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () ->
+            new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EXPOSED_COPPER_NUGGET = ITEMS.register("exposed_copper_nugget", () ->
+            new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OXIDIZED_COPPER_NUGGET = ITEMS.register("oxidized_copper_nugget", () ->
+            new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WEATHERED_COPPER_NUGGET = ITEMS.register("weathered_copper_nugget", () ->
             new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> COPPER_SHEARS = ITEMS.register("copper_shears",

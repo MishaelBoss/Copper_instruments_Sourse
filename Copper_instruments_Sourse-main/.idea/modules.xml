@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BrassInstruments.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BrassInstruments.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BrassInstruments.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BrassInstruments.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Copper_instruments_Sourse.iml" filepath="$PROJECT_DIR$/.idea/Copper_instruments_Sourse.iml" />
     </modules>
   </component>

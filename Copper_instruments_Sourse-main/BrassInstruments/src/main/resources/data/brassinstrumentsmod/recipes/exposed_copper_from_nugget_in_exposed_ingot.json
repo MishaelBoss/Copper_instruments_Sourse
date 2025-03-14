@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "X": {
-      "item": "brassinstrumentsmod:copper_nugget"
+      "item": "brassinstrumentsmod:exposed_copper_nugget"
     }
   },
   "pattern": [
@@ -12,7 +12,7 @@
     "XXX"
   ],
   "result": {
-    "item": "minecraft:copper_ingot",
+    "item": "brassinstrumentsmod:exposed_copper_ingot",
     "count": 1
   }
 }

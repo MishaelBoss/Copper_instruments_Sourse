@@ -166,6 +166,14 @@ public class BrassInstruments
         }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.COPPER_NUGGET);
+            event.accept(ModItems.EXPOSED_COPPER_NUGGET);
+            event.accept(ModItems.OXIDIZED_COPPER_NUGGET);
+            event.accept(ModItems.WEATHERED_COPPER_NUGGET);
+
+
+            event.accept(ModItems.EXPOSED_COPPER_INGOT);
+            event.accept(ModItems.OXIDIZED_COPPER_INGOT);
+            event.accept(ModItems.WEATHERED_COPPER_INGOT);
         }
     }
 

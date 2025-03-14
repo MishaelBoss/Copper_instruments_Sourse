@@ -23,6 +23,12 @@
   "item.brassinstrumentsmod.oxidized_copper_shovel": "Oxidized Copper Shovel",
   "item.brassinstrumentsmod.oxidized_copper_hoe": "Oxidized Copper Hoe",
 
+  "item.brassinstrumentsmod.waxed_exposed_copper_sword": "Waxed Exposed Copper Sword",
+  "item.brassinstrumentsmod.waxed_exposed_copper_pickaxe": "Waxed Exposed Copper Pickaxe",
+  "item.brassinstrumentsmod.waxed_exposed_copper_axe": "Waxed Exposed Copper Axe",
+  "item.brassinstrumentsmod.waxed_exposed_copper_shovel": "Waxed Exposed Copper Shovel",
+  "item.brassinstrumentsmod.waxed_exposed_copper_hoe": "Waxed Exposed Copper Hoe",
+
   "item.brassinstrumentsmod.waxed_oxidized_copper_sword": "Waxed Oxidized Copper Sword",
   "item.brassinstrumentsmod.waxed_oxidized_copper_pickaxe": "Waxed Oxidized Copper Pickaxe",
   "item.brassinstrumentsmod.waxed_oxidized_copper_axe": "Waxed Oxidized Copper Axe",
@@ -88,7 +94,14 @@
   "item.brassinstrumentsmod.waxed_weathered_copper_boots": "Waxed Weathered Copper Boots",
 
   "item.brassinstrumentsmod.copper_nugget": "Copper Nugget",
+  "item.brassinstrumentsmod.exposed_copper_nugget": "Exposed Copper Nugget",
+  "item.brassinstrumentsmod.oxidized_copper_nugget": "Oxidized Copper Nugget",
+  "item.brassinstrumentsmod.weathered_copper_nugget": "Weathered Copper Nugget",
+
+  "item.brassinstrumentsmod.exposed_copper_ingot": "Exposed Ingot",
+  "item.brassinstrumentsmod.oxidized_copper_ingot": "Oxidized Ingot",
+  "item.brassinstrumentsmod.weathered_copper_ingot": "Weathered Ingot",
 
   "item.brassinstrumentsmod.copper_music_disc": "Copper Music Disc",
-  "item.brassinstrumentsmod.copper_music_disc.desc": "MichaelBoss"
+  "item.brassinstrumentsmod.copper_music_disc.desc": "MichaelBoss - ox0"
 }
