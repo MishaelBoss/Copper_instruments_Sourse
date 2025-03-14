@@ -189,6 +189,7 @@ public class OxidizeEventHandler {
 		if (event.phase == TickEvent.Phase.END && event.player != null) {
 			Player player = event.player;
 			ItemStack heldItem = player.getMainHandItem();
+			Iterable<ItemStack> armorSlots = player.getArmorSlots();
 
 			if (mapsInitialized) {
 				UUID playerId = player.getUUID();
