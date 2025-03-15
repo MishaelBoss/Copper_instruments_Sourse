@@ -8,7 +8,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -24,9 +23,9 @@ public enum ModArmorMaterials implements ArmorMaterial, Holder<ArmorMaterial> {
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
     EXPOSED_COPPER("exposed_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
-    WEATHERED_COPPER("oxidized_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+    WEATHERED_COPPER("weathered_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get())),
-    OXIDIZED_COPPER("weathered_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
+    OXIDIZED_COPPER("oxidized_copper", 20, new int[]{ 2, 4 , 3, 2 },25,
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.COPPER_NUGGET.get()));
 
     private final String name;
