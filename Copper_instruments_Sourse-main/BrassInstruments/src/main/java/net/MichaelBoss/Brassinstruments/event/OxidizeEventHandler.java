@@ -31,6 +31,7 @@ public class OxidizeEventHandler {
 
 	private final Map<UUID, Integer> playerOxidationTimers = new HashMap<>();
 	private Map<Item, OxidizeData> toolOxidizeData;
+	private Map<Item, OxidizeDataItem> toolOxidizeDataItem;
 	private Map<Item, OxidizeData> armorOxidizeData;
 
 	private final int[] OXIDIZE_DAMAGE_TOOL = new int[] {
@@ -92,6 +93,7 @@ public class OxidizeEventHandler {
 	public OxidizeEventHandler() {
 		mapsInitialized = false;
 		toolOxidizeData = null;
+		toolOxidizeDataItem = null;
 		armorOxidizeData = null;
 	}
 
@@ -102,8 +104,10 @@ public class OxidizeEventHandler {
 			List.of(ModItems.COPPER_AXE, ModItems.EXPOSED_COPPER_AXE, ModItems.WEATHERED_COPPER_AXE, ModItems.OXIDIZED_COPPER_AXE),
 			List.of(ModItems.COPPER_HOE, ModItems.EXPOSED_COPPER_HOE, ModItems.WEATHERED_COPPER_HOE, ModItems.OXIDIZED_COPPER_HOE),
 			List.of(ModItems.COPPER_SWORD, ModItems.EXPOSED_COPPER_SWORD, ModItems.WEATHERED_COPPER_SWORD, ModItems.OXIDIZED_COPPER_SWORD),
-			List.of(ModItems.COPPER_SHEARS, ModItems.EXPOSED_COPPER_SHEARS, ModItems.WEATHERED_COPPER_SHEARS, ModItems.OXIDIZED_COPPER_SHEARS)
-		);
+			List.of(ModItems.COPPER_SHEARS, ModItems.EXPOSED_COPPER_SHEARS, ModItems.WEATHERED_COPPER_SHEARS, ModItems.OXIDIZED_COPPER_SHEARS),
+			List.of(ModItems.COPPER_NUGGET, ModItems.EXPOSED_COPPER_NUGGET, ModItems.WEATHERED_COPPER_NUGGET, ModItems.OXIDIZED_COPPER_NUGGET),
+			List.of(ModItems.EXPOSED_COPPER_INGOT, ModItems.WEATHERED_COPPER_INGOT, ModItems.OXIDIZED_COPPER_INGOT)
+        );
 		
 		List< List<RegistryObject<?>> > copper_armor = List.of(
 			List.of(ModItems.COPPER_HELMET, ModItems.EXPOSED_COPPER_HELMET, ModItems.WEATHERED_COPPER_HELMET, ModItems.OXIDIZED_COPPER_HELMET),
@@ -113,6 +117,7 @@ public class OxidizeEventHandler {
 		);
 		
 		toolOxidizeData = new HashMap<>();
+		toolOxidizeDataItem = new HashMap<>();
 		for(List<RegistryObject<?>> tool_set : copper_tools) {
 			addToolOxidizeData(tool_set);
 		}
@@ -127,6 +132,8 @@ public class OxidizeEventHandler {
 		for(int i = 0; i < size; i++) {
 			toolOxidizeData.put(((Item) items.get(i).get()).asItem(),
 							new OxidizeData((Item) items.get(i+1).get(), OXIDIZE_DAMAGE_TOOL[i], START_DAMAGE_TOOL[i]));
+			toolOxidizeDataItem.put(((Item) items.get(i).get()).asItem(),
+					new OxidizeDataItem((Item) items.get(i+1).get()));
 		}
 	}
 	
@@ -140,6 +147,8 @@ public class OxidizeEventHandler {
 			for(int i = 0; i < size; i++) {
 				armorOxidizeData.put(((Item) armor_set.get(i).get()).asItem(),
 									new OxidizeData((Item) armor_set.get(i+1).get(), OXIDIZE_DAMAGE_ARMOR[i][equipmentSlot], START_DAMAGE_ARMOR[i][equipmentSlot]));
+				toolOxidizeDataItem.put(((Item) armor_set.get(i).get()).asItem(),
+						new OxidizeDataItem((Item) armor_set.get(i+1).get()));
 			}
 			equipmentSlot++;
 		}
@@ -172,14 +181,6 @@ public class OxidizeEventHandler {
 		}
 	}
 
-	private boolean isCopperItem(ItemStack itemStack) {
-		return itemStack.getItem() == ModItems.COPPER_HELMET.get() ||
-				itemStack.getItem() == ModItems.COPPER_CHESTPLATE.get() ||
-				itemStack.getItem() == ModItems.COPPER_LEGGINGS.get() ||
-				itemStack.getItem() == ModItems.COPPER_BOOTS.get() ||
-				itemStack.getItem() == ModItems.COPPER_BOOTS.get() ;
-	}
-
 	@SubscribeEvent
 	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if(!mapsInitialized) {
@@ -189,7 +190,6 @@ public class OxidizeEventHandler {
 		if (event.phase == TickEvent.Phase.END && event.player != null) {
 			Player player = event.player;
 			ItemStack heldItem = player.getMainHandItem();
-			Iterable<ItemStack> armorSlots = player.getArmorSlots();
 
 			if (mapsInitialized) {
 				UUID playerId = player.getUUID();
@@ -205,70 +205,21 @@ public class OxidizeEventHandler {
 		}
 	}
 
-	private Item getOxidizedVersion(Item item) {
-		// COPPER TO EXPOSED
-		if (item == ModItems.COPPER_PICKAXE.get()) return ModItems.EXPOSED_COPPER_PICKAXE.get();
-		if (item == ModItems.COPPER_SHOVEL.get()) return ModItems.EXPOSED_COPPER_SHOVEL.get();
-		if (item == ModItems.COPPER_HOE.get()) return ModItems.EXPOSED_COPPER_HOE.get();
-		if (item == ModItems.COPPER_SWORD.get()) return ModItems.EXPOSED_COPPER_SWORD.get();
-		if (item == ModItems.COPPER_AXE.get()) return ModItems.EXPOSED_COPPER_AXE.get();
-
-		if (item == ModItems.COPPER_HELMET.get()) return ModItems.EXPOSED_COPPER_HELMET.get();
-		if (item == ModItems.COPPER_CHESTPLATE.get()) return ModItems.EXPOSED_COPPER_CHESTPLATE.get();
-		if (item == ModItems.COPPER_LEGGINGS.get()) return ModItems.EXPOSED_COPPER_LEGGINGS.get();
-		if (item == ModItems.COPPER_BOOTS.get()) return ModItems.EXPOSED_COPPER_BOOTS.get();
-
-		if (item == ModItems.COPPER_NUGGET.get()) return ModItems.EXPOSED_COPPER_NUGGET.get();
-		if (item == Items.COPPER_INGOT) return ModItems.EXPOSED_COPPER_INGOT.get();
-
-		if (item == ModItems.COPPER_SHEARS.get()) return ModItems.EXPOSED_COPPER_SHEARS.get();
-
-		// EXPOSED TO OXIDIZED
-		if (item == ModItems.EXPOSED_COPPER_PICKAXE.get()) return ModItems.OXIDIZED_COPPER_PICKAXE.get();
-		if (item == ModItems.EXPOSED_COPPER_SHOVEL.get()) return ModItems.OXIDIZED_COPPER_SHOVEL.get();
-		if (item == ModItems.EXPOSED_COPPER_HOE.get()) return ModItems.OXIDIZED_COPPER_HOE.get();
-		if (item == ModItems.EXPOSED_COPPER_SWORD.get()) return ModItems.OXIDIZED_COPPER_SWORD.get();
-		if (item == ModItems.EXPOSED_COPPER_AXE.get()) return ModItems.OXIDIZED_COPPER_AXE.get();
-
-		if (item == ModItems.EXPOSED_COPPER_HELMET.get()) return ModItems.OXIDIZED_COPPER_HELMET.get();
-		if (item == ModItems.EXPOSED_COPPER_CHESTPLATE.get()) return ModItems.OXIDIZED_COPPER_CHESTPLATE.get();
-		if (item == ModItems.EXPOSED_COPPER_LEGGINGS.get()) return ModItems.OXIDIZED_COPPER_LEGGINGS.get();
-		if (item == ModItems.EXPOSED_COPPER_BOOTS.get()) return ModItems.OXIDIZED_COPPER_BOOTS.get();
-
-		if (item == ModItems.EXPOSED_COPPER_NUGGET.get()) return ModItems.OXIDIZED_COPPER_NUGGET.get();
-		if (item == ModItems.EXPOSED_COPPER_INGOT.get()) return ModItems.OXIDIZED_COPPER_INGOT.get();
-
-		if (item == ModItems.EXPOSED_COPPER_SHEARS.get()) return ModItems.OXIDIZED_COPPER_SHEARS.get();
-
-		// OXIDIZED TO WEATHERED
-		if (item == ModItems.OXIDIZED_COPPER_PICKAXE.get()) return ModItems.WEATHERED_COPPER_PICKAXE.get();
-		if (item == ModItems.OXIDIZED_COPPER_SHOVEL.get()) return ModItems.WEATHERED_COPPER_SHOVEL.get();
-		if (item == ModItems.OXIDIZED_COPPER_HOE.get()) return ModItems.WEATHERED_COPPER_HOE.get();
-		if (item == ModItems.OXIDIZED_COPPER_SWORD.get()) return ModItems.WEATHERED_COPPER_SWORD.get();
-		if (item == ModItems.OXIDIZED_COPPER_AXE.get()) return ModItems.WEATHERED_COPPER_AXE.get();
-
-		if (item == ModItems.OXIDIZED_COPPER_HELMET.get()) return ModItems.WEATHERED_COPPER_HELMET.get();
-		if (item == ModItems.OXIDIZED_COPPER_CHESTPLATE.get()) return ModItems.WEATHERED_COPPER_CHESTPLATE.get();
-		if (item == ModItems.OXIDIZED_COPPER_LEGGINGS.get()) return ModItems.WEATHERED_COPPER_LEGGINGS.get();
-		if (item == ModItems.OXIDIZED_COPPER_BOOTS.get()) return ModItems.WEATHERED_COPPER_BOOTS.get();
-
-		if (item == ModItems.OXIDIZED_COPPER_NUGGET.get()) return ModItems.WEATHERED_COPPER_NUGGET.get();
-		if (item == ModItems.OXIDIZED_COPPER_INGOT.get()) return ModItems.WEATHERED_COPPER_INGOT.get();
-
-		if (item == ModItems.OXIDIZED_COPPER_SHEARS.get()) return ModItems.WEATHERED_COPPER_SHEARS.get();
-		return null;
-	}
-
 	private void oxidizeItem(Player player, ItemStack itemStack) {
-		Item oxidizedItem = getOxidizedVersion(itemStack.getItem());
 
 		if(!mapsInitialized) {
 			initializeMaps();
 		}
 
-		if (oxidizedItem != null) {
-			ItemStack newItemStack = new ItemStack(oxidizedItem, itemStack.getCount());
-			player.setItemInHand(InteractionHand.MAIN_HAND, newItemStack);
+		OxidizeDataItem dataItem = toolOxidizeDataItem.get(itemStack.getItem());
+		if(dataItem != null){
+			ItemStack nextTool = dataItem.getNextTool();
+			dataItem.damageValue = itemStack.getDamageValue();
+			dataItem.count = itemStack.getCount();
+			copyModifications(itemStack, nextTool);
+			nextTool.setCount(dataItem.getCount());
+			nextTool.setDamageValue(dataItem.getDamageValue());
+			player.setItemInHand(InteractionHand.MAIN_HAND, nextTool);
 		}
 
 		if(!player.isCreative()) {
@@ -351,5 +302,21 @@ public class OxidizeEventHandler {
 		int getStartDamageValue() {
 			return this.startDamageValue;
 		}
+	}
+
+	private class OxidizeDataItem {
+		private Item nextTool;
+		private int count;
+		private int damageValue;
+
+		OxidizeDataItem(Item nextTool) {
+			this.nextTool = nextTool;
+		}
+
+		ItemStack getNextTool() {
+			return this.nextTool.getDefaultInstance();
+		}
+		int getCount(){return this.count;}
+		int getDamageValue(){return this.damageValue;}
 	}
 }
