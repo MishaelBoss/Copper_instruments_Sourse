@@ -3,7 +3,6 @@ package net.MichaelBoss.Brassinstruments.event;
 import net.MichaelBoss.Brassinstruments.item.CopperTiers;
 import net.MichaelBoss.Brassinstruments.item.ModArmorMaterials;
 import net.MichaelBoss.Brassinstruments.item.ModItems;
-import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,8 +18,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.registries.RegistryObject;
-import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil;
 
 import java.util.*;
 
@@ -98,9 +95,6 @@ public class OxidizeEventHandler {
 		armorOxidizeData = null;
 		armorOxidizeDataItem = null;
 	}
-
-//	public static final Items.COPPER_INGOT;
-	//Я РУССКИЙ
 
 	private void initializeMaps() {
 		List<List<Item>> copper_tools = List.of(
