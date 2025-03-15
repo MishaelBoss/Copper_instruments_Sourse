@@ -157,26 +157,29 @@ public class OxidizeEventHandler {
 	@SubscribeEvent
 	public void onBreakEvent(BlockEvent.BreakEvent event) {
 		Player player = event.getPlayer();
+		ItemStack heldItem = player.getMainHandItem();
 		if(!event.getPlayer().level().isClientSide()) {
-			oxidizeItem(player, null);
+			oxidizeItem(player, heldItem);
 		}
 	}
 
 	@SubscribeEvent
 	public void onToolModificationEvent(BlockEvent.BlockToolModificationEvent event) {
 		Player player = event.getPlayer();
+		ItemStack heldItem = player.getMainHandItem();
 		if(!event.getPlayer().level().isClientSide()) {
-			oxidizeItem(player, null);
+			oxidizeItem(player, heldItem);
 		}
 	}
 
 	@SubscribeEvent
 	public void onLivingDamageEvent(LivingDamageEvent event) {
 		LivingEntity player = event.getEntity();
+		ItemStack heldItem = player.getMainHandItem();
 		if(!event.getEntity().level().isClientSide()) {
 			Entity entity = event.getSource().getDirectEntity();
 			if(entity instanceof Player) {
-				oxidizeItem((Player) entity, null);
+				oxidizeItem((Player) entity, heldItem);
 			}
 		}
 	}
@@ -223,12 +226,11 @@ public class OxidizeEventHandler {
 		}
 
 		if(!player.isCreative()) {
-			ItemStack item = player.getMainHandItem();
-			OxidizeData data = toolOxidizeData.get(item.getItem());
-			
-			if(data != null && item.getDamageValue() > data.getOxidizeDamageValue()) {
+			OxidizeData data = toolOxidizeData.get(itemStack.getItem());
+
+			if(data != null && itemStack.getDamageValue() > data.getOxidizeDamageValue()) {
 				ItemStack nextTool = data.getNextTool();
-				copyModifications(item, nextTool);
+				copyModifications(itemStack, nextTool);
 				nextTool.setDamageValue(data.getStartDamageValue());
 				player.setItemInHand(InteractionHand.MAIN_HAND, nextTool);
 			}
