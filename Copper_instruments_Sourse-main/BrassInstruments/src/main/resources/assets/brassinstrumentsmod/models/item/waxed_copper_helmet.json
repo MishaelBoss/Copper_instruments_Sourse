@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "brassinstrumentsmod:item/waxed_copper_helmet"
+    "layer0": "brassinstrumentsmod:item/copper_helmet"
   }
 }
